@@ -18,25 +18,17 @@ namespace Stacks
             var.Push("c");
             var.Push("b");
             var.Push("a");
-            PrintStackVar(var);
 
             PrintStack(stack);
+            PrintStack(var);
             ReverseString("Hello");
         }
 
-        public static void PrintStack(Stack<int> stacks)
+        public static void PrintStack<T> (Stack<T> stacks)
         {
             while(stacks.Count > 0)
             {
                 Console.WriteLine(stacks.Pop());
-            }
-        }
-
-        public static void PrintStackVar(Stack<string> var)
-        {
-            while (var.Count > 0)
-            {
-                Console.WriteLine(var.Pop());
             }
         }
 
